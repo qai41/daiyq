@@ -1,0 +1,12 @@
+<view class="grace-margin">
+  <view style="margin-top:50px;" class="grace-center">
+    <view>
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+      
+  </view>
+  <button wx:if="{{canIUse}}" type='primary' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style='margin-top:30px;'>
+    登录 <text class="grace-icons icon-arrow-right"></text>
+  </button>
+  <view wx:else>请升级微信版本</view>
+</view>

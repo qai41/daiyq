@@ -1,0 +1,41 @@
+<view class="grace-margin">
+  <view class="grace-list" style="margin-top:3px;">
+    <view class="items">
+      <view class="icons ucenter-face" style="border-radius:88rpx">
+        <open-data type="userAvatarUrl" ></open-data>
+      </view>
+      <view class="body">
+        <view class="title">
+        <open-data type="userNickName"></open-data>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="ucenter-line"></view>
+<view class="grace-margin">
+  <view class="grace-list">
+    <!-- <navigator class="items">
+      <view class="icons grace-icons icon-time grace-gray"></view>
+      <view class="body">
+        <view class="title">历史约球</view>
+      </view>
+      <view class="arrow-right"></view>
+    </navigator> -->
+    <navigator class="items">
+      <view class="icons grace-icons icon-star grace-blue"></view>
+      <view class="body">
+        <view class="title">我的荣誉(正在开发)</view>
+      </view>
+      <view class="arrow-right"></view>
+    </navigator>
+    <navigator class="items">
+      <view class="icons grace-icons icon-eye grace-green"></view>
+      <view class="body">
+        <view class="title">我的数据(正在开发)</view>
+      </view>
+      <view class="arrow-right"></view>
+    </navigator>
+  </view>
+</view>
+<view class="ucenter-line"></view>

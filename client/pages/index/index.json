@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "graceFullLoading": "../../graceUI/components/graceFullLoading"
+  },
+  "enablePullDownRefresh": true
+}
