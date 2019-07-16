@@ -76,7 +76,7 @@ class indexController extends grace{
 			}
 			$this->json($data,'1000');
 		}else{
-			$this->json([],'1000');
+			$this->json([],'1001');
 		}
 	}
 
@@ -123,5 +123,4 @@ class indexController extends grace{
 		db('yuejoin')->add(array('yueid'=>$yueid,'uid'=>$uid));
 		db('yueparty')->where('id=?',array($yueid))->field('joinnum', 1);
 	}
-
 }

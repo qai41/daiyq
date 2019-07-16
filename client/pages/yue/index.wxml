@@ -10,6 +10,14 @@
       <input type="text" class="input" name="title" placeholder="请输入标题"></input>
     </view>
     <view class="grace-items">
+      <view class="grace-label">付费</view>
+      <view class="other"><switch bindchange="bindPayChange"/></view>
+    </view>
+    <view class="grace-items"  wx:if="{{ifpay == 1}}">
+      <view class="grace-label">金额</view>
+      <input type="text" class="input" value="{{numberVal }}" disabled bindtap="showKeyboard" placeholder="请输入金额" name="amount" />
+    </view>
+    <view class="grace-items">
       <view class="grace-label">人数</view>
       <view class="other">
         <picker bindchange="bindPickerChange" value="{{num[numIndex]}}" range="{{num}}" name="num">
@@ -54,4 +62,10 @@
       <button formType="submit" type="primary" style="width:100%;">发起约球</button>
     </view>
   </form>
+  <graceNumberKeyboard 
+      show="{{graceNumberKeyboardShow}}" 
+      bind:keyboardDone="keyboardDone" 
+      bind:keyboardInput="keyboardInput" 
+      bind:keyboardDelete="keyboardDelete">
+  </graceNumberKeyboard>
 </view>
